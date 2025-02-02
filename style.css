@@ -1,0 +1,331 @@
+/* general */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: rgb(85,85,85);
+}
+/* -----------------transition----------------- */
+a, .btn{
+    transition:  300ms eas;
+}
+
+/* -------------desktop----------------- */
+nav, .nav-links{
+    display: flex;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+    position: relative;
+
+} 
+nav ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0;
+    bottom:-6px;
+    transition: 0.5s
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.logo{
+    font-size: 2rem;
+}
+.logo:hover{
+    cursor: default; 
+}
+.logo span{
+    color:#ff004f;
+}
+
+/* ------------------Hamburger menu -------------------*/
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right:0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+/* --------------------sections------------------ */
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section-container{
+    display: flex;
+}
+/* ------------------Profile Section------------------------------ */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+.section_pic-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p { 
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+.title span{
+    color: #ff004f;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/*----------------icon----------------------*/
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+/*-----------------------buttons-------------------------------*/
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+/* Button 1: Contact Info */
+.btn-color-1 {
+    background: black;
+    color: white;
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover {
+    /* background: white; */
+    color: black;
+}
+
+/* Button 2: Download CV */
+.btn-color-2 {
+    background: white;
+    color: black;
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-2:hover {
+    background: black;
+    color: white;
+}
+
+/* --------------------------About section---------------------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+    padding: 0 20px;
+}
+.about-col-1 img{
+    position: relative;
+    top: 1rem;
+    width: 90%;
+    border-radius: 45px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+
+.tab-contents ul li{
+    position: relative;
+    top: -1rem;
+    list-style: none;
+    margin: 10px 0;
+    color: black;
+}
+.tab-contents ul li span{
+    color: #7e1e3c;
+    font-size: 22px
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}

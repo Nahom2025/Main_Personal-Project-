@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><span>Nahom</span> Tesfaye </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><span>Nahom</span> Tesfaye</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="assets/idk.png" alt="Nahom Tesfaye profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title"><span>Nahom</span> Tesfaye</h1>
+            <p class="section__text__p2">Computer Science Enthusiast</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('assets/resume.pdf')"
+                >
+                    Download CV
+                </button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'"
+                >
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn profile"
+                    class="icon" 
+                    onclick="window.open('https://www.linkedin.com/in/nahom-tesfaye-5a5807306/', '_blank')"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="My Github profile"
+                    class="icon" 
+                    onclick="window.open('https://github.com/Nahom2025', '_blank')"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img 
+                            src="assets/3333.png" 
+                            alt="Nahom Tesfaye"
+                        >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm Nahom Tesfaye, a senior at Forney High School and an aspiring Software Engineer with a passion for technology and innovation. I’m actively involved in leadership and service as a member of the National Honor Society, Student Council, and various school organizations. My journey in tech began with HTML, CSS, JavaScript, and Python, and I’ve honed my skills through internships, coding programs like AllStarCode and Code2College, and building real-world projects.
+                        Driven by a desire to create platforms that empower communities, I aim to improve Ethiopia's economy and help others through technology. Beyond coding, I enjoy soccer, photography, fitness, and exploring new cultures. Let’s work together to solve challenges and build a better future through tech!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links" onclick="opentab('Experience', event)">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+                        </div>
+                        <!-- active-tab -->
+                        <div class="tab-contents" id="Experience"> 
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web Development</li>
+                                <li><span>App Development</span><br>Beuilding Andriod/iOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>University of Texat at Dallas</span>
+                                    <br>Major: Computer Science</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+<!--  -->
