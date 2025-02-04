@@ -329,3 +329,17 @@ section{
 .tab-contents.active-tab{
     display: block;
 }
+
+.arrow{
+    position: fixed;
+    right: 5rem;
+    bottom: 3rem;
+    font-size: 30px;
+    color: #ff004f;
+    cursor: pointer;
+    /* display: none; */
+}
+#about:target + .arrow{
+    display: block;
+}
+FIXME: fix the arrow display. It should only display when the user scrolls down to the about section.

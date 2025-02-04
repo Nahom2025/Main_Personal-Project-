@@ -79,42 +79,52 @@
         </div>
     </section>
     <section id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img 
-                            src="assets/3333.png" 
-                            alt="Nahom Tesfaye"
-                        >
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img 
+                        src="assets/3333.png" 
+                        alt="Nahom Tesfaye"
+                    >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm Nahom Tesfaye, a senior at Forney High School and an aspiring Software Engineer with a passion for technology and innovation. I’m actively involved in leadership and service as a member of the National Honor Society, Student Council, and various school organizations. My journey in tech began with HTML, CSS, JavaScript, and Python, and I’ve honed my skills through internships, coding programs like AllStarCode and Code2College, and building real-world projects.
+                        Driven by a desire to create platforms that empower communities, I aim to improve Ethiopia's economy and help others through technology. Beyond coding, I enjoy soccer, photography, fitness, and exploring new cultures. Let’s work together to solve challenges and build a better future through tech!
+                    </p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('Experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education', event)">Education</p>
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I'm Nahom Tesfaye, a senior at Forney High School and an aspiring Software Engineer with a passion for technology and innovation. I’m actively involved in leadership and service as a member of the National Honor Society, Student Council, and various school organizations. My journey in tech began with HTML, CSS, JavaScript, and Python, and I’ve honed my skills through internships, coding programs like AllStarCode and Code2College, and building real-world projects.
-                        Driven by a desire to create platforms that empower communities, I aim to improve Ethiopia's economy and help others through technology. Beyond coding, I enjoy soccer, photography, fitness, and exploring new cultures. Let’s work together to solve challenges and build a better future through tech!</p>
-
-                        <div class="tab-titles">
-                            <p class="tab-links" onclick="opentab('Experience', event)">Experience</p>
-                            <p class="tab-links" onclick="opentab('Education', event)">Education</p>
-                        </div>
-                        <!-- active-tab -->
-                        <div class="tab-contents" id="Experience"> 
-                            <ul>
-                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                                <li><span>Web Development</span><br>Web Development</li>
-                                <li><span>App Development</span><br>Beuilding Andriod/iOS apps</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Education">
-                            <ul>
-                                <li><span>University of Texat at Dallas</span>
-                                    <br>Major: Computer Science</li>
-                            </ul>
-                        </div>
+    
+                    <!-- Experience Section -->
+                    <div class="tab-contents" id="Experience"> 
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+    
+                    <!-- Education Section -->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>University of Texas at Dallas</span><br>Major: Computer Science</li>
+                        </ul>
                     </div>
                 </div>
-            </div> 
+            </div>
+        </div>
+         <!-- <img 
+            src="./assets/arrow.png" 
+            alt="Arrow Icon" 
+            class="icon arrow" 
+            onclick="location.href='./#experience'"
+        /> -->
+        <!-- FIXME: fix my arrow icon -->
     </section>
-    <script src="script.js"></script>
 </body>
 </html>
 <!--  -->
